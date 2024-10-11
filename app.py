@@ -2,7 +2,6 @@ from flask import Flask, render_template_string, jsonify
 
 app = Flask(__name__)
 
-# Sample questions with answers
 questions_data = [
     ("What is the correct file extension for Python files?", [".python", ".py", ".pt", ".pyt"], 1),
     ("How do you create a function in Python?", ["def function_name():", "function function_name():", "create function_name():", "func function_name():"], 0),
@@ -27,7 +26,7 @@ questions_data = [
     ("How do you define a dictionary in Python?", ["{key: value}", "[key: value]", "(key: value)", "<key: value>"], 0),
 ]
 
-# HTML template as a multi-line string
+
 html_template = """
 <!DOCTYPE html>
 <html lang="en">
